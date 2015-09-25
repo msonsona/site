@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sonsona.cat</title>
+    <description>Along a path of learning and discovery
+</description>
+    <link>http://sonsona.cat/</link>
+    <atom:link href="http://sonsona.cat/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 26 Sep 2015 00:18:41 +0200</pubDate>
+    <lastBuildDate>Sat, 26 Sep 2015 00:18:41 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
