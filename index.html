@@ -15,4 +15,17 @@ layout: home
     {% endif %}
   {% endfor %}
   </nav>
+  
+  <div class="last-post">
+    <h3>My last post</h3>
+    <ul class="post-list">
+      {% assign post = site.posts.last() %}
+      <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.excerpt %} • <i>{{ post.excerpt }}</i>{% endif %}</span>
+          <h4>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h4>
+      </li>
+    </ul>
+  </div>
 </div>
