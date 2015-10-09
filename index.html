@@ -19,7 +19,7 @@ layout: home
   <div class="last-post">
     <h3>My last post</h3>
     <ul class="post-list">
-      {% assign post = site.posts.last() %}
+      {% assign post = site.posts.first %}
       <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.excerpt %} • <i>{{ post.excerpt }}</i>{% endif %}</span>
           <h4>
