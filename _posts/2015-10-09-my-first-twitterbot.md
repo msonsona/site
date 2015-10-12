@@ -6,7 +6,7 @@ tags: python
 excerpt: In which the author presents his first twitterbot
 ---
 
-I've been using [twitter](https://twitter.com/msonsona) for several years and one of the most fascinating uses I've seen is to build bot accounts that tweet on their own, like those created by [Darius Kazemi](http://tinysubversions.com/)[(@tinysubversions)](https://twitter.com/tinysubversions) or [Allison Parrish](http://www.decontextualize.com/)[(@aparrish)](https://twitter.com/aparrish).
+I've been using [twitter](https://twitter.com/msonsona) for several years and one of the most fascinating uses I've seen is to build bot accounts that tweet on their own, like those created by [Darius Kazemi](http://tinysubversions.com/) ([@tinysubversions](https://twitter.com/tinysubversions)) or [Allison Parrish](http://www.decontextualize.com/) ([@aparrish](https://twitter.com/aparrish)).
 
 So I decided I wanted to make my own twitterbot. Some ideas sparkled in my mind, and some of them will eventually become a twitterbot I guess. However, I decided to start small and make a simple twitterbot to begin with.
 
