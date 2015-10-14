@@ -27,5 +27,6 @@ defaults:
 # Gems
 gems: [emoji_for_jekyll, jekyll-sitemap]
 
-# Excludes
+# Files
 exclude: [.env, s3_website.yml]
+keep_files: [uploads]
