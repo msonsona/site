@@ -257,6 +257,56 @@
     }
 }
 
+.post-share {
+    margin-bottom: 30px;
+    
+    .share-wrapper {
+        text-align: center;
+    }
+    
+    .share-button {
+        display: inline-block;
+        width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+        width:         calc(25% - (#{$spacing-unit} / 2));
+        padding: 5px;
+        
+        &:hover {
+            color: white;
+            border-radius: 2px;
+            text-decoration: none;
+        }
+    }
+    
+    .twitter {
+        border-bottom: 2px solid #55acee;
+        
+        &:hover {
+            background-color: #55acee;
+        }
+    }
+    .facebook {
+        border-bottom: 2px solid #3a5795;
+      
+        &:hover {
+            background-color: #3a5795;
+        }
+    }
+    .gplus {
+        border-bottom: 2px solid #db4437;
+    
+        &:hover {
+            background-color: #db4437;
+        }
+    }
+    .email {
+        border-bottom: 2px solid #c1c1c1;
+    
+        &:hover {
+            background-color: #c1c1c1;
+        }
+    }
+}
+
 .nav-next {
     float:right;
 }

@@ -326,6 +326,36 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+.post-share {
+  margin-bottom: 30px; }
+  .post-share .share-wrapper {
+    text-align: center; }
+  .post-share .share-button {
+    display: inline-block;
+    width: -webkit-calc(25% - (30px / 2));
+    width: calc(25% - (30px / 2));
+    padding: 5px; }
+    .post-share .share-button:hover {
+      color: white;
+      border-radius: 2px;
+      text-decoration: none; }
+  .post-share .twitter {
+    border-bottom: 2px solid #55acee; }
+    .post-share .twitter:hover {
+      background-color: #55acee; }
+  .post-share .facebook {
+    border-bottom: 2px solid #3a5795; }
+    .post-share .facebook:hover {
+      background-color: #3a5795; }
+  .post-share .gplus {
+    border-bottom: 2px solid #db4437; }
+    .post-share .gplus:hover {
+      background-color: #db4437; }
+  .post-share .email {
+    border-bottom: 2px solid #c1c1c1; }
+    .post-share .email:hover {
+      background-color: #c1c1c1; }
+
 .nav-next {
   float: right; }
 
