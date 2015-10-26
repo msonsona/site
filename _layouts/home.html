@@ -4,7 +4,9 @@
   {% include head.html %}
 
   <body class="home">
-    {% include analytics.html %}
+{% if jekyll.environment == "production" %}
+{% include analytics.html %}
+{% endif %}
 
     <div class="page-content">
       <div class="wrapper">

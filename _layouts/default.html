@@ -4,7 +4,9 @@
   {% include head.html page_type=page.page_type %}
 
   <body>
-    {% include analytics.html %}
+{% if jekyll.environment == "production" %}
+{% include analytics.html %}
+{% endif %}
 
     {% include header.html %}
 
