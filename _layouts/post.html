@@ -22,6 +22,7 @@ page_type: post
           <a class="share-button facebook" href="https://www.facebook.com/dialog/share?app_id=575249442622139&display=popup&href={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&redirect_uri={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" title="Share on Facebook" target="_blank">Facebook</a>
           <a class="share-button gplus" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google+">Google+</a>
+          <a class="share-button whatsapp" href="whatsapp://send?text={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" title="Share on Whatsapp">Whatsapp</a>
           <a class="share-button email" href="mailto:?subject={{ page.title | uri_escape }}%20by%20Miquel%20Sonsona&amp;body={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" title="Share via email" target="_blank">Email</a>
   </aside>
 

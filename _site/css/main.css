@@ -339,22 +339,45 @@ pre {
       color: white;
       border-radius: 2px;
       text-decoration: none; }
+    @media screen and (max-width: 600px) {
+      .post-share .share-button {
+        color: white;
+        border-radius: 2px;
+        text-decoration: none; } }
   .post-share .twitter {
     border-bottom: 2px solid #55acee; }
     .post-share .twitter:hover {
       background-color: #55acee; }
+    @media screen and (max-width: 600px) {
+      .post-share .twitter {
+        background-color: #55acee; } }
   .post-share .facebook {
     border-bottom: 2px solid #3a5795; }
     .post-share .facebook:hover {
       background-color: #3a5795; }
+    @media screen and (max-width: 600px) {
+      .post-share .facebook {
+        background-color: #3a5795; } }
   .post-share .gplus {
     border-bottom: 2px solid #db4437; }
     .post-share .gplus:hover {
       background-color: #db4437; }
+    @media screen and (max-width: 600px) {
+      .post-share .gplus {
+        background-color: #db4437; } }
   .post-share .email {
-    border-bottom: 2px solid #c1c1c1; }
+    border-bottom: 2px solid orange; }
     .post-share .email:hover {
-      background-color: #c1c1c1; }
+      background-color: orange; }
+    @media screen and (max-width: 600px) {
+      .post-share .email {
+        background-color: orange; } }
+  .post-share .whatsapp {
+    background-color: #60b82d;
+    display: none; }
+    @media screen and (max-width: 600px) {
+      .post-share .whatsapp {
+        display: block; } }
 
 .nav-next {
   float: right; }
