@@ -341,9 +341,25 @@ pre {
       text-decoration: none; }
     @media screen and (max-width: 600px) {
       .post-share .share-button {
+        width: -webkit-calc(20% - (30px / 2));
+        width: calc(20% - (30px / 2));
         color: white;
         border-radius: 2px;
-        text-decoration: none; } }
+        text-decoration: none;
+        border: none !important; }
+        .post-share .share-button .share-icon {
+          display: inline-block !important;
+          margin: 10px 0px 0px 0px !important; }
+        .post-share .share-button .share-title {
+          display: none; } }
+    .post-share .share-button .share-icon {
+      background-image: url(white-sprite.png);
+      background-size: 17px 320px;
+      background-position: 0 0;
+      display: none;
+      width: 17px;
+      height: 21px;
+      margin: 10px 10px 0px 0px; }
   .post-share .twitter {
     border-bottom: 2px solid #55acee; }
     .post-share .twitter:hover {
@@ -351,6 +367,8 @@ pre {
     @media screen and (max-width: 600px) {
       .post-share .twitter {
         background-color: #55acee; } }
+    .post-share .twitter .share-icon {
+      background-position: 0px -59px; }
   .post-share .facebook {
     border-bottom: 2px solid #3a5795; }
     .post-share .facebook:hover {
@@ -358,6 +376,8 @@ pre {
     @media screen and (max-width: 600px) {
       .post-share .facebook {
         background-color: #3a5795; } }
+    .post-share .facebook .share-icon {
+      background-position: 0px -38px; }
   .post-share .gplus {
     border-bottom: 2px solid #db4437; }
     .post-share .gplus:hover {
@@ -365,6 +385,8 @@ pre {
     @media screen and (max-width: 600px) {
       .post-share .gplus {
         background-color: #db4437; } }
+    .post-share .gplus .share-icon {
+      background-position: 0px -78px; }
   .post-share .email {
     border-bottom: 2px solid orange; }
     .post-share .email:hover {
@@ -372,12 +394,16 @@ pre {
     @media screen and (max-width: 600px) {
       .post-share .email {
         background-color: orange; } }
+    .post-share .email .share-icon {
+      background-position: 0px -258px; }
   .post-share .whatsapp {
     background-color: #60b82d;
     display: none; }
     @media screen and (max-width: 600px) {
       .post-share .whatsapp {
-        display: block; } }
+        display: inline-block; } }
+    .post-share .whatsapp .share-icon {
+      background-position: 0px -198px; }
 
 .nav-next {
   float: right; }

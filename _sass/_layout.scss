@@ -274,13 +274,44 @@
             color: white;
             border-radius: 2px;
             text-decoration: none;
+            
+//            .share-icon {
+//                display: inline-block !important;
+//            }
         }
         
         @include media-query($on-palm) {
+            width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+            width:         calc(20% - (#{$spacing-unit} / 2));
+            
             color: white;
             border-radius: 2px;
             text-decoration: none;
+            border: none !important;
+            
+            .share-icon {
+                display: inline-block !important;
+                margin: 10px 0px 0px 0px !important;
+            }
+            
+            .share-title {
+                display: none;
+            }
         }
+        
+        .share-icon {
+            background-image: url(white-sprite.png);
+            background-size: 17px 320px;
+            background-position: 0 0;
+            display: none;
+            width: 17px;
+            height: 21px;
+            margin: 10px 10px 0px 0px;
+        }
+        
+//        .share-title {
+//            vertical-align: super;
+//        }
     }
     
     .twitter {
@@ -293,6 +324,10 @@
         @include media-query($on-palm) {
             background-color: #55acee;
         }
+        
+        .share-icon {
+            background-position: 0px -59px;
+        }
     }
     .facebook {
         border-bottom: 2px solid #3a5795;
@@ -303,6 +338,10 @@
         
         @include media-query($on-palm) {
             background-color: #3a5795;
+        }
+        
+        .share-icon {
+            background-position: 0px -38px;
         }
     }
     .gplus {
@@ -315,6 +354,10 @@
         @include media-query($on-palm) {
             background-color: #db4437;
         }
+        
+        .share-icon {
+            background-position: 0px -78px;
+        }
     }
     .email {
         border-bottom: 2px solid orange;
@@ -326,13 +369,21 @@
         @include media-query($on-palm) {
             background-color: orange;
         }
+        
+        .share-icon {
+            background-position: 0px -258px;
+        }
     }
     .whatsapp {
         background-color: #60b82d;
         display: none;
         
         @include media-query($on-palm) {
-          display: block;
+            display: inline-block;
+        }
+        
+        .share-icon {
+            background-position: 0px -198px;
         }
     }
 
