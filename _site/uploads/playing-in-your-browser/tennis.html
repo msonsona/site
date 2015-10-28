@@ -1,14 +1,50 @@
+<!DOCTYPE html>
 <html>
+  <head>
+  <script src="//cdn.optimizely.com/js/3698583409.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playing Pong</title>
+  <meta name="description" content="Playing Pong in your browser, an HTML5 game using Canvas and JavaScript">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@msonsona" />
+  <meta name="twitter:title" content="Playing Pong" />
+  <meta name="twitter:description" content="Playing Pong in your browser" />
+
+  <meta property="fb:app_id" content="575249442622139" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://sonsona.cat/uploads/playing-in-your-browser/tennis.html" />
+  <meta property="og:title" content="Playing Pong" />
+  <meta property="og:description" content="Playing Pong in your browser, an HTML5 game using Canvas and JavaScript" />
+</head>
+<body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68653154-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
 <script>
+// A/B Testing
+window['optimizely'] = window['optimizely'] || [];
+
 var canvas;
 var canvasContext;
 
 var ballX = 50;
 var ballY = 50;
 
+
+const INITIAL_BALL_SPEED_Y = 4;
 var ballSpeedX = 10;
-var ballSpeedY = 4;
+var ballSpeedY = INITIAL_BALL_SPEED_Y;
 
 const PADDLE_HEIGHT = 100;
 const PADDLE_WIDTH = 10;
@@ -16,11 +52,14 @@ const PADDLE_WIDTH = 10;
 var paddle1Y = 250;
 var paddle2Y = 250;
 
+var paddle2SpeedY = 6;
+
 var player1Score = 0;
 var player2Score = 0;
 
 const WINNING_SCORE = 3;
 var showingWinScreen = false;
+var winTracked = false;
 
 function calculateMousePosition(evt) {
     var rect = canvas.getBoundingClientRect();
@@ -39,6 +78,10 @@ function handleMouseClick(evt) {
         player1Score = 0;
         player2Score = 0;
         showingWinScreen = false;
+        winTracked = false;
+        
+        // track new game click
+        window.optimizely.push(["trackEvent", "additional_game"]);
     }
 }
 
@@ -70,14 +113,18 @@ function ballReset() {
     ballY = canvas.height / 2;
     
     ballSpeedX = -ballSpeedX;
+    ballSpeedY = INITIAL_BALL_SPEED_Y;
 }
 
 function computerMovement() {
+    // obtain current center position of the paddle
     var paddle2YCenter = paddle2Y + PADDLE_HEIGHT/2;
+    
+    // The paddle follow the ball
     if (paddle2YCenter < ballY - 35) {
-        paddle2Y += 6;
+        paddle2Y += paddle2SpeedY;
     } else if (paddle2YCenter > ballY + 35) {
-        paddle2Y -= 6;
+        paddle2Y -= paddle2SpeedY;
     }
 }
 
@@ -98,6 +145,7 @@ function moveEverything() {
             ballSpeedX = -ballSpeedX;
             
             // affect direction and speed depending on the part of the paddle
+            // that hits the ball (to the edges hits faster)
             var deltaY = ballY - (paddle1Y + PADDLE_HEIGHT/2);
             ballSpeedY = deltaY * 0.35;
         } else {
@@ -143,9 +191,22 @@ function drawEverything() {
         
         if (player1Score >= WINNING_SCORE) {
             canvasContext.fillText("Left player won!", 300, 200);
+            
+            // track player win
+            if (!winTracked) {
+                window.optimizely.push(["trackEvent", "win_player"]);
+                winTracked = true;
+            }
+            
         }
         if (player2Score >= WINNING_SCORE) {
             canvasContext.fillText("Right player won!", 300, 200);
+            
+            // track computer win
+            if (!winTracked) {
+                window.optimizely.push(["trackEvent", "win_computer"]);
+                winTracked = true;
+            }
         }
         
         canvasContext.fillText("click to continue", 300, 500);
@@ -181,5 +242,5 @@ function colorCircle(centerX, centerY, radius, drawColor) {
 }
 
 </script>
-
+</body>
 </html>
