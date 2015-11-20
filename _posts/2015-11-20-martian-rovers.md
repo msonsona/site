@@ -17,9 +17,9 @@ The NASA open data effort provides a well-documented set of APIs:
     - assets: that lists images and dates available on the imagery endpoint for the given lat/long position.
 - [Mars Rovers Photos](https://api.nasa.gov/api.html#MarsPhotos), to retrieve images taken from the different rovers that have been exploring in Mars. 
 - [Patents](https://api.nasa.gov/api.html#patents), to access patents by NASA with the ability to search by keyword too.
-- [Sounds](https://api.nasa.gov/api.html#sounds), to retrieve sounds retrieved from space.
+- [Sounds](https://api.nasa.gov/api.html#sounds), to obtain sounds retrieved from space.
 
-The NASA API requires an API key, and one can be obtained for free just [registering](https://api.nasa.gov/index.html#apply-for-an-api-key) a developer account. However they provide a demo key `DEMO_KEY`, that can be used to explore the API, and later on if your intended use of their API is not heavy. Responses of the API are plain JSON, which is very convenient.
+The NASA API requires an API key, and one can be obtained for free just [registering](https://api.nasa.gov/index.html#apply-for-an-api-key) a developer account. However, they provide a demo key `DEMO_KEY`, that can be used to explore the API, and later on if your intended use of their API is not heavy. Responses of the API are plain JSON, which is very convenient.
 
 For the moment I've focused on the photos from the Mars Rovers, as I wanted to develop something with more visual results. There are three rovers available: the Curiosity, the Opportunity, and the Spirit. Each of them has equipped a set of cameras to fulfill different exploration and research functions. Moreover, each rover has been taking pictures in Mars for a given period of time. Summing up, the three parameters I consider when making an API call to retrieve rover images are:
 
@@ -36,14 +36,14 @@ For the moment I've focused on the photos from the Mars Rovers, as I wanted to d
     - `PANCAM`: Panoramic Camera
     - `MINITES`: Miniature Thermal Emission Spectrometer (Mini-TES)
 
-Having these photographic resources, the next step is to decide how to use them. One of the ideas I had in mind was to upload pictures as if they were memories of the rover. Similar to Polaroid pictures and possibly attaching comments or "memories" of the rover in Mars. Another idea was, given the retrieved images are grayscale, to add more color and make the pictures appear more *alien*. So I decided to build two twitterbots instead of just one :smile:
+Having these photographic resources, the next step is to decide how to use them. One of the ideas I had in mind was to upload pictures as if they were memories of the rover. Similar to Polaroid pictures and possibly attaching comments or jokes of the rover in Mars. Another idea was, given the retrieved images are grayscale, to add more color and make the pictures appear more *alien*. So I decided to build two twitterbots instead of just one :smile:
 
 The most relevant Python modules I've used are:
 
 - [requests](http://docs.python-requests.org): a more simpler, user-friendlier module to make HTTP requests, useful to consume external APIs.
 - [Pillow](https://pillow.readthedocs.org): a fork of the original Python Image Library (PIL), to process the images obtained from the NASA Martian Rovers Photos API.
 
-To be able to store the NASA API key, I've modified ([commit 1](https://github.com/msonsona/twitterbots/commit/ff3214256a20c7c823b909a181658f2182e42051) and [commit 2](https://github.com/msonsona/twitterbots/commit/f385351611d66502fe7fe765cb9446fd87a52bbc)) the `credentials_pickler` script to be able to store additional key-value pairs for a twitterbot account. Then a simple request to the API looks like this:
+To be able to store the NASA API key, I've modified ([commit 1](https://github.com/msonsona/twitterbots/commit/ff3214256a20c7c823b909a181658f2182e42051) and [commit 2](https://github.com/msonsona/twitterbots/commit/f385351611d66502fe7fe765cb9446fd87a52bbc)) my `credentials_pickler` script to be able to store additional key-value pairs for a twitterbot account. Then a simple request to the API looks like this:
 
 {% highlight python %}
 # Obtain the stored API key or use the demo one if not found
@@ -115,7 +115,7 @@ else:
 img_1.save("polaroid_" + img_name)
 {% endhighlight %}
 
-Finally, to complete the twitterbot, it tweets the rover that took the picture and on what date. Additionally, a closing sentence completes the tweet, trying to make a fun remark or engaging with different hashtags or twitter users:
+Finally, to complete the twitterbot, it tweets the rover that took the picture, on what date and a closing sentence, trying to make a fun remark or engaging with different hashtags or twitter users:
 
 {% highlight python %}
 tweet_1 = rover['name'] + ' on ' + selected_photo['earth_date'] + '. '
@@ -124,6 +124,9 @@ tweet_1 = rover['name'] + ' on ' + selected_photo['earth_date'] + '. '
 closings = [ ... ]
 
 tweet_1 += random.choice(closings)
+
+# Tweepy API setup omitted
+tweepy_api.update_with_media("polaroid_" + img_name, status=tweet_1)
 {% endhighlight %}
 
 All in all, this twitterbot produces tweets like this:
@@ -160,5 +163,5 @@ As usual, the source code of these twitterbots is on [github](https://github.com
 
 P.S. During the writing of this post, I saw a couple of tweets with interesting material related to Mars, one fiction, one reality:
 
-- A [tweet](https://twitter.com/saleiva/status/666626259762479104) from [@saleiva](https://twitter.com/saleiva) linking a [cool map](https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map) of [Mark Watney](http://www.imdb.com/character/ch0484069/?ref_=tt_cl_t1) locations on Mars, based on <a rel="nofollow" href="http://www.amazon.com/gp/product/0553418025/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0553418025&linkCode=as2&tag=sonsonacat-20&linkId=7ZXXETORW5HBCVS7">The Martian</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&l=as2&o=1&a=0553418025" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, the book from Andy Weir. Enjoy it!
+- A [tweet](https://twitter.com/saleiva/status/666626259762479104) from [@saleiva](https://twitter.com/saleiva) linking a [cool map](https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map) of [Mark Watney](http://www.imdb.com/character/ch0484069/?ref_=tt_cl_t1) adventures on Mars, based on <a rel="nofollow" href="http://www.amazon.com/gp/product/0553418025/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0553418025&linkCode=as2&tag=sonsonacat-20&linkId=7ZXXETORW5HBCVS7">The Martian</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&l=as2&o=1&a=0553418025" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, the book from Andy Weir. Enjoy it!
 - A [tweet](https://twitter.com/arnicas/status/667083032533336065) from [@arnicas](https://twitter.com/arnicas) linking an [interactive map](http://www.nytimes.com/interactive/science/space/mars-curiosity-rover-tracker.html) by the New York Times Graphics Team depicting the path of the Curiosity rover on Mars.
