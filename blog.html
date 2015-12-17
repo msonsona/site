@@ -14,7 +14,7 @@ permalink: /blog/
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.excerpt %} • <i>{{ post.excerpt }}</i>{% endif %}</span>
+        <span class="post-meta">on {{ post.date | date: "%b %-d, %Y" }}{% if post.excerpt %} • <i>{{ post.excerpt }}</i>{% endif %}</span>
       </li>
     {% endfor %}
   </ul>
