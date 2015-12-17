@@ -2,23 +2,23 @@
 layout: default
 page_type: post
 ---
-<div class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">on {{ page.date | date: "%b %-d, %Y" }}
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
       {% if page.categories %} • {{ page.categories | array_to_sentence_string  }}{% endif %}
     </p>
   </header>
 
-  <article class="post-content">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
-  </article>
+  </div>
   
   <aside class="post-share">
       <h3 class="share-header">Share this post</h3>
       <div class="share-wrapper">
-          <a class="share-button twitter" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title | uri_escape }}%20by%20@msonsona" title="Share on Twitter" target="_blank"><span class="share-icon"></span><span class="share-title">Twitter</span></a>
+          <a class="share-button twitter" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title | uri_escape }}%20by%20@{{ site.twitter_username }}" title="Share on Twitter" target="_blank"><span class="share-icon"></span><span class="share-title">Twitter</span></a>
           <a class="share-button facebook" href="https://www.facebook.com/dialog/share?app_id=575249442622139&display=popup&href={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}&redirect_uri={{ page.url | prepend: site.baseurl | prepend: site.url | uri_escape }}" title="Share on Facebook" target="_blank"><span class="share-icon"></span><span class="share-title">Facebook</span></a>
           <a class="share-button gplus" href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google+"><span class="share-icon"></span><span class="share-title">Google+</span></a>
@@ -33,4 +33,4 @@ page_type: post
     {% if page.next %}<a class="nav-next" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }} »</a>{% endif %}
   </nav>
     
-</div>
+</article>
