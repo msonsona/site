@@ -4,6 +4,7 @@ title:  "A better candidate"
 categories: twitterbots
 tags: python
 excerpt: In which the author improves the candidate bot for the Spanish Elections on 20D
+sharing_image: /uploads/a-better-candidate/profile.png
 ---
 
 ![The bot profile](/uploads/a-better-candidate/profile.png)
