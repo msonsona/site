@@ -159,7 +159,7 @@ The second twitterbot generates tweets like this:
 
 You can check the full profile for the [Tripping_Rover on Twitter](https://twitter.com/tripping_rover).
 
-As usual, the source code of these twitterbots is on [github](https://github.com/msonsona/twitterbots/blob/5b03d8aec3187dc7eeea8b06a799c6153bbe63e8/martian_rovers.py).
+As usual, the source code of these twitterbots is on [github](https://github.com/msonsona/twitterbots/blob/master/martian_rovers.py).
 
 P.S. During the writing of this post, I saw a couple of tweets with interesting material related to Mars, one fiction, one reality:
 
