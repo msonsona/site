@@ -6,8 +6,8 @@
 </description>
     <link>http://sonsona.cat/</link>
     <atom:link href="http://sonsona.cat/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Jan 2016 16:28:44 +0100</pubDate>
-    <lastBuildDate>Tue, 19 Jan 2016 16:28:44 +0100</lastBuildDate>
+    <pubDate>Fri, 22 Jan 2016 08:30:06 +0100</pubDate>
+    <lastBuildDate>Fri, 22 Jan 2016 08:30:06 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -662,6 +662,9 @@ noche noche NCFS000 1
 &lt;p&gt;You can check the full profile of “&lt;a href=&quot;https://twitter.com/el_bot_indecis&quot;&gt;the undecided bot&lt;/a&gt;” on Twitter.&lt;/p&gt;
 
 &lt;p&gt;Given there have been some noise about the &lt;a href=&quot;https://botsdetwitter.wordpress.com/2015/09/15/elecciones-27s/&quot;&gt;use of bot accounts&lt;/a&gt; to promote and amplify political messages before and specially during the campaign, and there is (big &lt;img class=&quot;emoji&quot; title=&quot;smile&quot; alt=&quot;smile&quot; src=&quot;https://github.global.ssl.fastly.net/images/icons/emoji/smile.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;) room for improvement to my current approach I will try to build a new twitterbot for the Spanish Elections on the next 20th of December, but my bot will not try (at least willingly) to promote or amplify the political position of any contestant party &lt;img class=&quot;emoji&quot; title=&quot;innocent&quot; alt=&quot;innocent&quot; src=&quot;https://github.global.ssl.fastly.net/images/icons/emoji/innocent.png&quot; height=&quot;20&quot; width=&quot;20&quot; align=&quot;absmiddle&quot; /&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;update-on-2016-01-22&quot;&gt;Update on 2016-01-22&lt;/h3&gt;
+&lt;p&gt;I’ve published a post of this &lt;a href=&quot;/a-better-candidate/&quot;&gt;improved twitterbot&lt;/a&gt; for the Spanish Elections. You can follow the bot in twitter too &lt;a href=&quot;https://twitter.com/bot_candidato&quot;&gt;@bot_candidato&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 14 Oct 2015 00:00:00 +0200</pubDate>
         <link>http://sonsona.cat/a-bot-for-the-elections/</link>

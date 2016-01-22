@@ -76,3 +76,6 @@ Not too bad for an hour of coding :sweat_smile:!
 You can check the full profile of "[the undecided bot](https://twitter.com/el_bot_indecis)" on Twitter.
 
 Given there have been some noise about the [use of bot accounts](https://botsdetwitter.wordpress.com/2015/09/15/elecciones-27s/) to promote and amplify political messages before and specially during the campaign, and there is (big :smile:) room for improvement to my current approach I will try to build a new twitterbot for the Spanish Elections on the next 20th of December, but my bot will not try (at least willingly) to promote or amplify the political position of any contestant party :innocent:.
+
+### Update on 2016-01-22
+I've published a post of this [improved twitterbot]({% post_url 2016-01-19-a-better-candidate %}) for the Spanish Elections. You can follow the bot in twitter too [@bot_candidato](https://twitter.com/bot_candidato).
