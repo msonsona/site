@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://sonsona.cat/growth-hacking-for-twitterbots/</loc>
+    <lastmod>2016-01-27T00:00:00+01:00</lastmod>
+  </url>
+  <url>
     <loc>http://sonsona.cat/a-better-candidate/</loc>
     <lastmod>2016-01-19T00:00:00+01:00</lastmod>
   </url>
@@ -53,5 +57,8 @@
     </url>
     <url>
       <loc>http://sonsona.cat/a-better-candidate/</loc>
+    </url>
+    <url>
+      <loc>http://sonsona.cat/growth-hacking-for-twitterbots/</loc>
     </url>
 </urlset>
