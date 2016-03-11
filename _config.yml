@@ -33,5 +33,5 @@ keep_files: [uploads]
 
 # Categories
 category_archive:
-  path: ""
+  path: "category"
   slugify: true
