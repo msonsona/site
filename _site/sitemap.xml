@@ -40,6 +40,15 @@
   <url>
     <loc>http://sonsona.cat/</loc>
   </url>
+  <url>
+    <loc>http://sonsona.cat/category/meta/</loc>
+  </url>
+  <url>
+    <loc>http://sonsona.cat/category/twitterbots/</loc>
+  </url>
+  <url>
+    <loc>http://sonsona.cat/category/gamedev/</loc>
+  </url>
     <url>
       <loc>http://sonsona.cat/hello-world/</loc>
     </url>

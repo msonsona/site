@@ -6,8 +6,8 @@
 </description>
     <link>http://sonsona.cat/</link>
     <atom:link href="http://sonsona.cat/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Jan 2016 08:17:19 +0100</pubDate>
-    <lastBuildDate>Wed, 27 Jan 2016 08:17:19 +0100</lastBuildDate>
+    <pubDate>Fri, 11 Mar 2016 03:14:46 +0100</pubDate>
+    <lastBuildDate>Fri, 11 Mar 2016 03:14:46 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -955,7 +955,7 @@ noche noche NCFS000 1
         <guid isPermaLink="true">http://sonsona.cat/hello-world/</guid>
         
         
-        <category>blog</category>
+        <category>meta</category>
         
       </item>
     
