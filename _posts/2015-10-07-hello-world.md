@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello World!"
-categories: blog
+categories: meta
 excerpt: In which the author presents the blog
 ---
 
