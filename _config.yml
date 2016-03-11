@@ -30,3 +30,7 @@ gems: [emoji_for_jekyll, jekyll-sitemap]
 # Files
 exclude: [.env, s3_website.yml]
 keep_files: [uploads]
+
+# Categories
+category_archive:
+  slugify: true
