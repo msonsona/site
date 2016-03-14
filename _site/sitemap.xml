@@ -47,9 +47,6 @@
     <loc>http://sonsona.cat/projects/</loc>
   </url>
   <url>
-    <loc>http://sonsona.cat/projects/%C3%8Dtaca/</loc>
-  </url>
-  <url>
     <loc>http://sonsona.cat/category/meta/</loc>
   </url>
   <url>
@@ -57,6 +54,9 @@
   </url>
   <url>
     <loc>http://sonsona.cat/category/gamedev/</loc>
+  </url>
+  <url>
+    <loc>http://sonsona.cat/projects/%C3%8Dtaca/</loc>
   </url>
     <url>
       <loc>http://sonsona.cat/hello-world/</loc>
