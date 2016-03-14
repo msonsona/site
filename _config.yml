@@ -35,3 +35,7 @@ keep_files: [uploads]
 category_archive:
   path: "category"
   slugify: true
+
+# Projects Portfolio
+portfolio_dir: "projects"
+skip_related_projects: true
