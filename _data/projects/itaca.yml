@@ -1,8 +1,12 @@
 title: Ítaca
-description: A randomization of a poem
-category: natural language
-technology:
-    - FreeLing
+title_slug: itaca
+date: 2016-03-09
+url: http://sonsona.cat/itaca/
+source_url: https://github.com/msonsona/itaca
+description: A randomization of the poem "Ithaca" by Greek poet Konstantinos P. Kavafis. 
+category: Natural Language Processing
+technologies:
+    - FreeLing (Natural Language Processing library)
     - HTML
     - CSS
     - JavaScript

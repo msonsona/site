@@ -28,10 +28,14 @@ module Jekyll
             # Then generate the project pages
             site.data["projects"].each do |project_file|
                 project = project_file[1]
-
-                # I Love Cats -> i-love-cats
-                # file_name_slug = slugify(project["title"])
-                file_name_slug = Utils.slugify(project["title"])
+                
+                if project["title_slug"]
+                    file_name_slug = project["title_slug"]
+                else
+                    # I Love Cats -> i-love-cats
+                    # file_name_slug = slugify(project["title"])
+                    file_name_slug = Utils.slugify(project["title"])
+                end
 
                 # portfolio/i-love-cats/
                 path = File.join(dir, file_name_slug)

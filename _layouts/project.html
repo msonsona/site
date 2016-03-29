@@ -1,9 +1,12 @@
-<h2>{{ page.title }} <span>{{ page.category }}</span></h2>
-
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<h3>{{ page.date }} - {{ page.category }}</h3>
 <p>{{ page.description }}</p>
 
 <ul>
-    {% for technology in page.technology %}
-    <li><a>{{ technology }}</a></li>
+    {% for technology in page.technologies %}
+    <li>{{ technology }}</li>
     {% endfor %}
 </ul>
