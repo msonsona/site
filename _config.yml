@@ -36,11 +36,16 @@ defaults:
     values:
       author: "Miquel"
 
-# Gems
-gems: [emoji_for_jekyll, jekyll-sitemap]
+# Plugins (previously Gems)
+plugins:
+  - jekyll-feed
+  - emoji_for_jekyll
+  - jekyll-sitemap
 
 # Files
-exclude: [.env, s3_website.yml]
+exclude: 
+  - .env
+  - s3_website.yml
 keep_files: [uploads]
 
 # Categories
