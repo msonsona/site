@@ -46,6 +46,12 @@ plugins:
 exclude: 
   - .env
   - s3_website.yml
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  
 keep_files: [uploads]
 
 # Categories
