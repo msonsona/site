@@ -39,6 +39,7 @@ defaults:
 # Plugins (previously Gems)
 plugins:
   - jekyll-feed
+  - jekyll-archives
   - jemoji
   - jekyll-sitemap
 
@@ -58,6 +59,13 @@ keep_files: [uploads]
 category_archive:
   path: "category"
   slugify: true
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: category_archive
+  permalinks:
+    category: '/category/:name/'
 
 # Projects Portfolio
 portfolio_dir: "projects"

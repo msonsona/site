@@ -3,10 +3,15 @@ layout: default
 ---
 <div class="blog">
 
-  <h1 class="page-heading">Category: {{ page.category }}</h1>
+  <h1 class="page-heading">Category: {{ page.title }}</h1>
 
   <ul class="post-list">
-    {{ content }}
+    {% for post in page.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
 
 </div>
