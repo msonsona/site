@@ -39,7 +39,7 @@ defaults:
 # Plugins (previously Gems)
 plugins:
   - jekyll-feed
-  - emoji_for_jekyll
+  - jemoji
   - jekyll-sitemap
 
 # Files
@@ -51,7 +51,7 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  
+
 keep_files: [uploads]
 
 # Categories
