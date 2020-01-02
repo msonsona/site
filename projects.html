@@ -6,15 +6,14 @@ permalink: /projects/
 
 <h1 class="post-title">Projects</h1>
 
-{% assign projects = site.data.projects | get_projects_from_files | sort:'date' %}
-{% for project in projects reversed %}
-    <!-- portfolio-item -->
-    <a href="/{{ project.dir }}">
+{% for project in site.projects %}
+    <a href="{{ project.url }}">
         <h2>{{ project.title }}</h2>
     </a>
-    <span>{{ project.date }} - {{ project.category }}</span>
-    <a href="/{{ project.dir }}">
+    <span>{{ project.date | date_to_string: "ordinal", "US" }} - {{ project.category }}</span>
+    {% if project.image %}
+    <a href="/{{ project.project_url }}/">
         <img src="{{ project.image.url }}" alt="{{ project.image.alt }}" title="{{ project.image.title }}">
     </a>
-    <!-- portfolio-item -->
+    {% endif %}
 {% endfor %}

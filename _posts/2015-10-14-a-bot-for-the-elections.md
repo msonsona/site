@@ -26,7 +26,7 @@ candidats = [
     ]
 {% endhighlight %}
 
-Having the list of twitter handles to fetch tweets for, and again using [tweepy](http://www.tweepy.org), I can easily obtain the last 20 tweets for each of the candidates and split the words so I end up with the list of words composing the 140 tweets:
+Having the list of twitter handles to fetch tweets for, and again using [tweepy](http://www.tweepy.org), I can easily obtain the last 20 tweets for each of the candidates and split each tweet's text into words so I end up with the list of words composing all 140 tweets:
 
 {% highlight python %}
 texts = []

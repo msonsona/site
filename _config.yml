@@ -4,7 +4,7 @@ email: miquel@sonsona.cat
 description: > # this means to ignore newlines until "baseurl:"
   Along a path of learning and discovery
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://sonsona.cat" # the base hostname & protocol for your site
+url: "https://sonsona.cat" # the base hostname & protocol for your site
 twitter_username: msonsona
 github_username:  msonsona
 
@@ -15,7 +15,7 @@ markdown: kramdown
 # GitHub Pages settings
 lsi: false
 safe: true
-source: [your repo's top level directory]
+source: "."
 incremental: false
 highlighter: rouge
 gist:
@@ -53,7 +53,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-keep_files: [uploads]
+keep_files:
+  - uploads
 
 # Categories
 category_archive:
@@ -68,5 +69,8 @@ jekyll-archives:
     category: '/category/:name/'
 
 # Projects Portfolio
-portfolio_dir: "projects"
-skip_related_projects: true
+# portfolio_dir: "projects"
+# skip_related_projects: true
+collections:
+  projects:
+    output: true

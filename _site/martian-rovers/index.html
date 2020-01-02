@@ -15,29 +15,18 @@
 
   <meta property="fb:app_id" content="575249442622139" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://sonsona.cat/martian-rovers/" />
+  <meta property="og:url" content="http://localhost:4000/martian-rovers/" />
   <meta property="og:title" content="Martian rovers" />
 
   <meta property="og:description" content="In which the author builds bots using pictures of the NASA martian rovers" />
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://sonsona.cat/martian-rovers/">
-  <link rel="alternate" type="application/rss+xml" title="sonsona.cat" href="http://sonsona.cat/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/martian-rovers/">
+  <link rel="alternate" type="application/rss+xml" title="sonsona.cat" href="http://localhost:4000/feed.xml" />
 </head>
 
 
   <body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68653154-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
     <header class="site-header">
@@ -48,10 +37,10 @@
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        <svg viewbox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
         </svg>
       </a>
 
@@ -74,7 +63,7 @@
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Martian rovers</h1>
-    <p class="post-meta">on <time datetime="2015-11-20T00:00:00+01:00" itemprop="datePublished">Nov 20, 2015</time>
+    <p class="post-meta">on <time datetime="2015-11-20T00:00:00+01:00" itemprop="datePublished">Nov 20th, 2015</time>
      • in
      <a href="/category/twitterbots/">twitterbots</a>
     
@@ -83,65 +72,83 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>Some years ago I read <a rel="nofollow" href="http://www.amazon.com/gp/product/B00W8RJ4M8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00W8RJ4M8&amp;linkCode=as2&amp;tag=sonsonacat-20&amp;linkId=WXNCYK7IUPB5BQNJ">the Mars trilogy</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&amp;l=as2&amp;o=1&amp;a=B00W8RJ4M8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> from Kim Stanley Robinson. I remember having a very good time reading the books. Fast-forward to some weeks ago, I read a <a href="http://apievangelist.com/2015/10/14/nasa-is-rocking-it-with-their-very-inspirational-and-simple-apis/">post from Kin Lane</a>, API guru, about a group of <a href="https://api.nasa.gov/api.html">APIs published by NASA</a> to open access to (some of, obviously) their data. Finally, last week I went to the movies to watch <a href="http://www.imdb.com/title/tt3659388">The Martian</a> which I greatly enjoyed and gave me the final push to build something related to or inspired by Mars.</p>
+    <p>Some years ago I read <a rel="nofollow" href="http://www.amazon.com/gp/product/B00W8RJ4M8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00W8RJ4M8&amp;linkCode=as2&amp;tag=sonsonacat-20&amp;linkId=WXNCYK7IUPB5BQNJ">the Mars trilogy</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&amp;l=as2&amp;o=1&amp;a=B00W8RJ4M8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"> from Kim Stanley Robinson. I remember having a very good time reading the books. Fast-forward to some weeks ago, I read a <a href="http://apievangelist.com/2015/10/14/nasa-is-rocking-it-with-their-very-inspirational-and-simple-apis/">post from Kin Lane</a>, API guru, about a group of <a href="https://api.nasa.gov/api.html">APIs published by NASA</a> to open access to (some of, obviously) their data. Finally, last week I went to the movies to watch <a href="http://www.imdb.com/title/tt3659388">The Martian</a> which I greatly enjoyed and gave me the final push to build something related to or inspired by Mars.</p>
 
 <p>The NASA open data effort provides a well-documented set of APIs:</p>
 
 <ul>
-  <li><a href="https://api.nasa.gov/api.html#apod">Astronomy Picture of the Day</a>, to retrieve stunning space images, with optional conceptual explanation by experts. Pretty cool, but they already mention building a bot as a use case, so nothing innovative in here for the moment.</li>
-  <li><a href="https://api.nasa.gov/api.html#NeoWS">Asteroids - NeoWs (Near Earth Object Web Service)</a>, to explore how close asteroids can come from Earth. This one looks more promising, given there is a <code>is_potentially_hazardous_asteroid</code> field in the responses! <img class="emoji" title="yum" alt="yum" src="https://github.global.ssl.fastly.net/images/icons/emoji/yum.png" height="20" width="20" align="absmiddle" /></li>
-  <li><a href="https://api.nasa.gov/api.html#earth">Earth</a>, to grab images taken by NASA satellites of the Earth surface. This API provides two endpoints:
+  <li>
+<a href="https://api.nasa.gov/api.html#apod">Astronomy Picture of the Day</a>, to retrieve stunning space images, with optional conceptual explanation by experts. Pretty cool, but they already mention building a bot as a use case, so nothing innovative in here for the moment.</li>
+  <li>
+<a href="https://api.nasa.gov/api.html#NeoWS">Asteroids - NeoWs (Near Earth Object Web Service)</a>, to explore how close asteroids can come from Earth. This one looks more promising, given there is a <code class="language-plaintext highlighter-rouge">is_potentially_hazardous_asteroid</code> field in the responses! <img class="emoji" title=":yum:" alt=":yum:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png" height="20" width="20">
+</li>
+  <li>
+<a href="https://api.nasa.gov/api.html#earth">Earth</a>, to grab images taken by NASA satellites of the Earth surface. This API provides two endpoints:
     <ul>
       <li>imagery: returns images from NASA satellites of the given lat/long position and as close as possible to the given date.</li>
       <li>assets: that lists images and dates available on the imagery endpoint for the given lat/long position.</li>
     </ul>
   </li>
-  <li><a href="https://api.nasa.gov/api.html#MarsPhotos">Mars Rovers Photos</a>, to retrieve images taken from the different rovers that have been exploring in Mars. </li>
-  <li><a href="https://api.nasa.gov/api.html#patents">Patents</a>, to access patents by NASA with the ability to search by keyword too.</li>
-  <li><a href="https://api.nasa.gov/api.html#sounds">Sounds</a>, to obtain sounds retrieved from space.</li>
+  <li>
+<a href="https://api.nasa.gov/api.html#MarsPhotos">Mars Rovers Photos</a>, to retrieve images taken from the different rovers that have been exploring in Mars.</li>
+  <li>
+<a href="https://api.nasa.gov/api.html#patents">Patents</a>, to access patents by NASA with the ability to search by keyword too.</li>
+  <li>
+<a href="https://api.nasa.gov/api.html#sounds">Sounds</a>, to obtain sounds retrieved from space.</li>
 </ul>
 
-<p>The NASA API requires an API key, and one can be obtained for free just <a href="https://api.nasa.gov/index.html#apply-for-an-api-key">registering</a> a developer account. However, they provide a demo key <code>DEMO_KEY</code>, that can be used to explore the API, and later on if your intended use of their API is not heavy. Responses of the API are plain JSON, which is very convenient.</p>
+<p>The NASA API requires an API key, and one can be obtained for free just <a href="https://api.nasa.gov/index.html#apply-for-an-api-key">registering</a> a developer account. However, they provide a demo key <code class="language-plaintext highlighter-rouge">DEMO_KEY</code>, that can be used to explore the API, and later on if your intended use of their API is not heavy. Responses of the API are plain JSON, which is very convenient.</p>
 
 <p>For the moment I’ve focused on the photos from the Mars Rovers, as I wanted to develop something with more visual results. There are three rovers available: the Curiosity, the Opportunity, and the Spirit. Each of them has equipped a set of cameras to fulfill different exploration and research functions. Moreover, each rover has been taking pictures in Mars for a given period of time. Summing up, the three parameters I consider when making an API call to retrieve rover images are:</p>
 
 <ul>
   <li>the <strong>sol</strong>, representing the martian “day” since the rover landing. Each rover attaches to its JSON definition the maximum sol value, so I just can select a random value from 0 to the maximum sol.</li>
-  <li>the <strong>rover name</strong> of the selected rover, so one in <code>curiosity</code>, <code>opportunity</code>, <code>spirit</code>.</li>
+  <li>the <strong>rover name</strong> of the selected rover, so one in <code class="language-plaintext highlighter-rouge">curiosity</code>, <code class="language-plaintext highlighter-rouge">opportunity</code>, <code class="language-plaintext highlighter-rouge">spirit</code>.</li>
   <li>the <strong>camera</strong> of the rover to retrieve pictures from. It can be, depending on <a href="https://api.nasa.gov/api.html#MarsPhotos">availability</a> for each of the rovers, one in:
     <ul>
-      <li><code>FHAZ</code>: Front Hazard Avoidance Camera</li>
-      <li><code>RHAZ</code>: Rear Hazard Avoidance Camera</li>
-      <li><code>MAST</code>: Mast Camera</li>
-      <li><code>CHEMCAM</code>: Chemistry and Camera Complex</li>
-      <li><code>MAHLI</code>: Mars Hand Lens Imager</li>
-      <li><code>MARDI</code>: Mars Descent Imager</li>
-      <li><code>NAVCAM</code>: Navigation Camera</li>
-      <li><code>PANCAM</code>: Panoramic Camera</li>
-      <li><code>MINITES</code>: Miniature Thermal Emission Spectrometer (Mini-TES)</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">FHAZ</code>: Front Hazard Avoidance Camera</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">RHAZ</code>: Rear Hazard Avoidance Camera</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">MAST</code>: Mast Camera</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">CHEMCAM</code>: Chemistry and Camera Complex</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">MAHLI</code>: Mars Hand Lens Imager</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">MARDI</code>: Mars Descent Imager</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">NAVCAM</code>: Navigation Camera</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">PANCAM</code>: Panoramic Camera</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">MINITES</code>: Miniature Thermal Emission Spectrometer (Mini-TES)</li>
     </ul>
   </li>
 </ul>
 
-<p>Having these photographic resources, the next step is to decide how to use them. One of the ideas I had in mind was to upload pictures as if they were memories of the rover. Similar to Polaroid pictures and possibly attaching comments or jokes of the rover in Mars. Another idea was, given the retrieved images are grayscale, to add more color and make the pictures appear more <em>alien</em>. So I decided to build two twitterbots instead of just one <img class="emoji" title="smile" alt="smile" src="https://github.global.ssl.fastly.net/images/icons/emoji/smile.png" height="20" width="20" align="absmiddle" /></p>
+<p>Having these photographic resources, the next step is to decide how to use them. One of the ideas I had in mind was to upload pictures as if they were memories of the rover. Similar to Polaroid pictures and possibly attaching comments or jokes of the rover in Mars. Another idea was, given the retrieved images are grayscale, to add more color and make the pictures appear more <em>alien</em>. So I decided to build two twitterbots instead of just one <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
 
 <p>The most relevant Python modules I’ve used are:</p>
 
 <ul>
-  <li><a href="http://docs.python-requests.org">requests</a>: a more simpler, user-friendlier module to make HTTP requests, useful to consume external APIs.</li>
-  <li><a href="https://pillow.readthedocs.org">Pillow</a>: a fork of the original Python Image Library (PIL), to process the images obtained from the NASA Martian Rovers Photos API.</li>
+  <li>
+<a href="http://docs.python-requests.org">requests</a>: a more simpler, user-friendlier module to make HTTP requests, useful to consume external APIs.</li>
+  <li>
+<a href="https://pillow.readthedocs.org">Pillow</a>: a fork of the original Python Image Library (PIL), to process the images obtained from the NASA Martian Rovers Photos API.</li>
 </ul>
 
-<p>To be able to store the NASA API key, I’ve modified (<a href="https://github.com/msonsona/twitterbots/commit/ff3214256a20c7c823b909a181658f2182e42051">commit 1</a> and <a href="https://github.com/msonsona/twitterbots/commit/f385351611d66502fe7fe765cb9446fd87a52bbc">commit 2</a>) my <code>credentials_pickler</code> script to be able to store additional key-value pairs for a twitterbot account. Then a simple request to the API looks like this:</p>
+<p>To be able to store the NASA API key, I’ve modified (<a href="https://github.com/msonsona/twitterbots/commit/ff3214256a20c7c823b909a181658f2182e42051">commit 1</a> and <a href="https://github.com/msonsona/twitterbots/commit/f385351611d66502fe7fe765cb9446fd87a52bbc">commit 2</a>) my <code class="language-plaintext highlighter-rouge">credentials_pickler</code> script to be able to store additional key-value pairs for a twitterbot account. Then a simple request to the API looks like this:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Obtain the stored API key or use the demo one if not found</span>
-<span class="k">if</span> <span class="n">credentials</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'extra_tokens'</span><span class="p">):</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Obtain the stored API key or use the demo one if not found
+</span><span class="k">if</span> <span class="n">credentials</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'extra_tokens'</span><span class="p">):</span>
     <span class="n">nasa_api_key</span> <span class="o">=</span> <span class="n">credentials_1</span><span class="p">[</span><span class="s">'extra_tokens'</span><span class="p">][</span><span class="s">'nasa_api_key'</span><span class="p">]</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">nasa_api_key</span> <span class="o">=</span> <span class="s">'DEMO_KEY'</span>
 
-<span class="c"># Obtain info about available rovers</span>
-<span class="n">rovers_url_base</span> <span class="o">=</span> <span class="s">'https://api.nasa.gov/mars-photos/api/v1/rovers/'</span>
+<span class="c1"># Obtain info about available rovers
+</span><span class="n">rovers_url_base</span> <span class="o">=</span> <span class="s">'https://api.nasa.gov/mars-photos/api/v1/rovers/'</span>
 <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span><span class="s">'api_key'</span><span class="p">:</span> <span class="n">nasa_api_key</span><span class="p">}</span>
 <span class="n">rovers_req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">rovers_url_base</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
 <span class="n">rovers_json</span> <span class="o">=</span> <span class="n">rovers_req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></code></pre></figure>
@@ -150,48 +157,48 @@
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">rover</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">rovers_json</span><span class="p">[</span><span class="s">'rovers'</span><span class="p">])</span>
 <span class="n">sol</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">rover</span><span class="p">[</span><span class="s">'max_sol'</span><span class="p">])</span>
-<span class="c"># Select a camera from the intersection of the rover cams and the cool cams</span>
-<span class="n">selected_camera</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="c1"># Select a camera from the intersection of the rover cams and the cool cams
+</span><span class="n">selected_camera</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="k">while</span> <span class="ow">not</span> <span class="n">selected_camera</span><span class="p">:</span>
     <span class="n">camera</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">rover</span><span class="p">[</span><span class="s">'cameras'</span><span class="p">])</span>
     
-    <span class="c"># Cool cams: </span>
-    <span class="n">cool_cams</span> <span class="o">=</span> <span class="p">[</span><span class="s">'FHAZ'</span><span class="p">,</span> <span class="s">'RHAZ'</span><span class="p">,</span> <span class="s">'NAVCAM'</span><span class="p">,</span> <span class="s">'MINITES'</span><span class="p">,</span> <span class="s">'MAST'</span><span class="p">]</span>
+    <span class="c1"># Cool cams: 
+</span>    <span class="n">cool_cams</span> <span class="o">=</span> <span class="p">[</span><span class="s">'FHAZ'</span><span class="p">,</span> <span class="s">'RHAZ'</span><span class="p">,</span> <span class="s">'NAVCAM'</span><span class="p">,</span> <span class="s">'MINITES'</span><span class="p">,</span> <span class="s">'MAST'</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">camera</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span> <span class="ow">in</span> <span class="n">cool_cams</span><span class="p">:</span>
         <span class="n">selected_camera</span> <span class="o">=</span> <span class="bp">True</span>
 
-<span class="c"># Request images from the API</span>
-<span class="n">payload</span><span class="p">[</span><span class="s">'camera'</span><span class="p">]</span> <span class="o">=</span> <span class="n">camera</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span>
+<span class="c1"># Request images from the API
+</span><span class="n">payload</span><span class="p">[</span><span class="s">'camera'</span><span class="p">]</span> <span class="o">=</span> <span class="n">camera</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span>
 <span class="n">payload</span><span class="p">[</span><span class="s">'sol'</span><span class="p">]</span> <span class="o">=</span> <span class="n">sol</span>
 <span class="n">rover_img_req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">rovers_url_base</span> <span class="o">+</span> <span class="n">rover</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span> <span class="o">+</span> <span class="s">'/photos'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
 
-<span class="c"># Obtain one image</span>
-<span class="n">images_json</span> <span class="o">=</span> <span class="n">rover_img_req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="c1"># Obtain one image
+</span><span class="n">images_json</span> <span class="o">=</span> <span class="n">rover_img_req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
 <span class="n">selected_photo</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">images_json</span><span class="p">[</span><span class="s">'photos'</span><span class="p">])</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">selected_photo</span><span class="p">[</span><span class="s">'img_src'</span><span class="p">])</span>
 <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">))</span>
 <span class="n">img_name</span> <span class="o">=</span> <span class="n">selected_photo</span><span class="p">[</span><span class="s">'img_src'</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span></code></pre></figure>
 
-<p>For the Polaroid-like picture, Pillow provides basic image operations like <code>ImageOps.expand</code> and <code>Image.crop</code> for setting borders and cropping, respectively. So I used a series of operations to obtain the typical white border of a Polaroid picture:</p>
+<p>For the Polaroid-like picture, Pillow provides basic image operations like <code class="language-plaintext highlighter-rouge">ImageOps.expand</code> and <code class="language-plaintext highlighter-rouge">Image.crop</code> for setting borders and cropping, respectively. So I used a series of operations to obtain the typical white border of a Polaroid picture:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">img_tmp_1</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c"># black inset border</span>
-<span class="n">img_tmp_2</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">img_tmp_1</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span> <span class="c"># white border</span>
-<span class="n">img_tmp_2_height</span><span class="p">,</span> <span class="n">img_tmp_2_width</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">size</span> <span class="c"># obtain new image height/width</span>
-<span class="n">crop_box</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_width</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_height</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span> <span class="c"># set box to crop</span>
-<span class="n">img_1</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">crop_box</span><span class="p">)</span> <span class="c"># polaroid style</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">img_tmp_1</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># black inset border
+</span><span class="n">img_tmp_2</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">img_tmp_1</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span> <span class="c1"># white border
+</span><span class="n">img_tmp_2_height</span><span class="p">,</span> <span class="n">img_tmp_2_width</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">size</span> <span class="c1"># obtain new image height/width
+</span><span class="n">crop_box</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_width</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_height</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># set box to crop
+</span><span class="n">img_1</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">crop_box</span><span class="p">)</span> <span class="c1"># polaroid style</span></code></pre></figure>
 
-<p>For some reason (I have an open <a href="http://stackoverflow.com/questions/33561526/python-pillow-expand-sets-black-border-defining-white-parameter">question</a> on StackOverflow if someone knows how to help <img class="emoji" title="wink" alt="wink" src="https://github.global.ssl.fastly.net/images/icons/emoji/wink.png" height="20" width="20" align="absmiddle" />) most of the times the big white border is painted black, so I had to implement a mechanism to detect whether the border is white or not and either keep working on the modified image or just keep the original image, respectively:</p>
+<p>For some reason (I have an open <a href="http://stackoverflow.com/questions/33561526/python-pillow-expand-sets-black-border-defining-white-parameter">question</a> on StackOverflow if someone knows how to help <img class="emoji" title=":wink:" alt=":wink:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f609.png" height="20" width="20">) most of the times the big white border is painted black, so I had to implement a mechanism to detect whether the border is white or not and either keep working on the modified image or just keep the original image, respectively:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Check if border is white</span>
-<span class="k">if</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">):</span>
-    <span class="c"># then crop</span>
-    <span class="n">img_tmp_2_height</span><span class="p">,</span> <span class="n">img_tmp_2_width</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">size</span> <span class="c"># obtain new image height/width</span>
-    <span class="n">crop_box</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_width</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_height</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span> <span class="c"># set box to crop</span>
-    <span class="n">img_1</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">crop_box</span><span class="p">)</span> <span class="c"># polaroid style</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"White border! Cropping"</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># Check if border is white
+</span><span class="k">if</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">):</span>
+    <span class="c1"># then crop
+</span>    <span class="n">img_tmp_2_height</span><span class="p">,</span> <span class="n">img_tmp_2_width</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">size</span> <span class="c1"># obtain new image height/width
+</span>    <span class="n">crop_box</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_width</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="n">img_tmp_2_height</span><span class="o">-</span><span class="mi">50</span><span class="p">)</span> <span class="c1"># set box to crop
+</span>    <span class="n">img_1</span> <span class="o">=</span> <span class="n">img_tmp_2</span><span class="o">.</span><span class="n">crop</span><span class="p">(</span><span class="n">crop_box</span><span class="p">)</span> <span class="c1"># polaroid style
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">"White border! Cropping"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="c"># if not, just use original image</span>
-    <span class="n">img_1</span> <span class="o">=</span> <span class="n">img</span>
+    <span class="c1"># if not, just use original image
+</span>    <span class="n">img_1</span> <span class="o">=</span> <span class="n">img</span>
     <span class="k">print</span><span class="p">(</span><span class="s">"Keeping the original image"</span><span class="p">)</span>
 
 <span class="n">img_1</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s">"polaroid_"</span> <span class="o">+</span> <span class="n">img_name</span><span class="p">)</span></code></pre></figure>
@@ -200,39 +207,43 @@
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">tweet_1</span> <span class="o">=</span> <span class="n">rover</span><span class="p">[</span><span class="s">'name'</span><span class="p">]</span> <span class="o">+</span> <span class="s">' on '</span> <span class="o">+</span> <span class="n">selected_photo</span><span class="p">[</span><span class="s">'earth_date'</span><span class="p">]</span> <span class="o">+</span> <span class="s">'. '</span>
 
-<span class="c"># Closings omitted for brevity</span>
-<span class="n">closings</span> <span class="o">=</span> <span class="p">[</span> <span class="o">...</span> <span class="p">]</span>
+<span class="c1"># Closings omitted for brevity
+</span><span class="n">closings</span> <span class="o">=</span> <span class="p">[</span> <span class="o">...</span> <span class="p">]</span>
 
 <span class="n">tweet_1</span> <span class="o">+=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">closings</span><span class="p">)</span>
 
-<span class="c"># Tweepy API setup omitted</span>
-<span class="n">tweepy_api</span><span class="o">.</span><span class="n">update_with_media</span><span class="p">(</span><span class="s">"polaroid_"</span> <span class="o">+</span> <span class="n">img_name</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">tweet_1</span><span class="p">)</span></code></pre></figure>
+<span class="c1"># Tweepy API setup omitted
+</span><span class="n">tweepy_api</span><span class="o">.</span><span class="n">update_with_media</span><span class="p">(</span><span class="s">"polaroid_"</span> <span class="o">+</span> <span class="n">img_name</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="n">tweet_1</span><span class="p">)</span></code></pre></figure>
 
 <p>All in all, this twitterbot produces tweets like this:</p>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Opportunity on 2004-03-23. Is this water? <a href="https://t.co/yZ5jwRgdvp">pic.twitter.com/yZ5jwRgdvp</a></p>&mdash; Nostalgic Rover (@nostalgic_rover) <a href="https://twitter.com/nostalgic_rover/status/665231427793997824">November 13, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en">
+<p lang="en" dir="ltr">Opportunity on 2004-03-23. Is this water? <a href="https://t.co/yZ5jwRgdvp">pic.twitter.com/yZ5jwRgdvp</a></p>— Nostalgic Rover (@nostalgic_rover) <a href="https://twitter.com/nostalgic_rover/status/665231427793997824">November 13, 2015</a>
+</blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>You can check the full profile for the <a href="https://twitter.com/nostalgic_rover">Nostalgic_Rover on Twitter</a>.</p>
 
-<p>For the colorized picture, Pillow provides a handy <code>ImageOps.colorize</code> method which transforms a greyscale image applying a color gradient within the two colors provided as parameters. So trying to create more contrasting images, I chose the following approach, using the <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSL color representation</a>:</p>
+<p>For the colorized picture, Pillow provides a handy <code class="language-plaintext highlighter-rouge">ImageOps.colorize</code> method which transforms a greyscale image applying a color gradient within the two colors provided as parameters. So trying to create more contrasting images, I chose the following approach, using the <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSL color representation</a>:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">hue</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>
 <span class="n">color1</span> <span class="o">=</span> <span class="n">ImageColor</span><span class="o">.</span><span class="n">getrgb</span><span class="p">(</span><span class="s">"hsl("</span> <span class="o">+</span> 
-                                <span class="nb">str</span><span class="p">(</span><span class="n">hue</span><span class="p">)</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="c"># hue</span>
-                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">, "</span> <span class="o">+</span> <span class="c"># saturation</span>
-                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">)"</span><span class="p">)</span> <span class="c"># lightness</span>
-<span class="n">color2</span> <span class="o">=</span> <span class="n">ImageColor</span><span class="o">.</span><span class="n">getrgb</span><span class="p">(</span><span class="s">"hsl("</span> <span class="o">+</span> 
-                                <span class="nb">str</span><span class="p">((</span><span class="n">hue</span> <span class="o">+</span> <span class="mi">180</span><span class="p">)</span> <span class="o">%</span> <span class="mi">360</span><span class="p">)</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="c"># opposite hue</span>
-                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">, "</span> <span class="o">+</span> <span class="c"># saturation</span>
-                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">85</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">)"</span><span class="p">)</span> <span class="c"># lightness</span>
-<span class="n">img_2</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">color1</span><span class="p">,</span> <span class="n">color2</span><span class="p">)</span></code></pre></figure>
+                                <span class="nb">str</span><span class="p">(</span><span class="n">hue</span><span class="p">)</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="c1"># hue
+</span>                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">, "</span> <span class="o">+</span> <span class="c1"># saturation
+</span>                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">)"</span><span class="p">)</span> <span class="c1"># lightness
+</span><span class="n">color2</span> <span class="o">=</span> <span class="n">ImageColor</span><span class="o">.</span><span class="n">getrgb</span><span class="p">(</span><span class="s">"hsl("</span> <span class="o">+</span> 
+                                <span class="nb">str</span><span class="p">((</span><span class="n">hue</span> <span class="o">+</span> <span class="mi">180</span><span class="p">)</span> <span class="o">%</span> <span class="mi">360</span><span class="p">)</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="c1"># opposite hue
+</span>                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">75</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">, "</span> <span class="o">+</span> <span class="c1"># saturation
+</span>                                <span class="nb">str</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">85</span><span class="p">))</span> <span class="o">+</span> <span class="s">"</span><span class="si">%</span><span class="s">)"</span><span class="p">)</span> <span class="c1"># lightness
+</span><span class="n">img_2</span> <span class="o">=</span> <span class="n">ImageOps</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">color1</span><span class="p">,</span> <span class="n">color2</span><span class="p">)</span></code></pre></figure>
 
-<p>In this code, <code>color1</code> will be applied to the darkest parts of the image, and <code>color2</code> will be applied to the clearest parts of the image. With <code>hue = random.randint(0, 360)</code> and <code>(hue + 180) % 360)</code> I get a random hue for <code>color1</code> and the opposed hue for <code>color2</code>. Then a random saturation between 25% and 75% (to avoid too neutral, which could get too similar, or too saturated colors, which could reduce the relative contrast between colors). Finally, for <code>color1</code> a random lightness in the “darkest” half of the spectrum and for <code>color2</code> a random lightness in the “clearest” half of the spectrum.</p>
+<p>In this code, <code class="language-plaintext highlighter-rouge">color1</code> will be applied to the darkest parts of the image, and <code class="language-plaintext highlighter-rouge">color2</code> will be applied to the clearest parts of the image. With <code class="language-plaintext highlighter-rouge">hue = random.randint(0, 360)</code> and <code class="language-plaintext highlighter-rouge">(hue + 180) % 360)</code> I get a random hue for <code class="language-plaintext highlighter-rouge">color1</code> and the opposed hue for <code class="language-plaintext highlighter-rouge">color2</code>. Then a random saturation between 25% and 75% (to avoid too neutral, which could get too similar, or too saturated colors, which could reduce the relative contrast between colors). Finally, for <code class="language-plaintext highlighter-rouge">color1</code> a random lightness in the “darkest” half of the spectrum and for <code class="language-plaintext highlighter-rouge">color2</code> a random lightness in the “clearest” half of the spectrum.</p>
 
 <p>The second twitterbot generates tweets like this:</p>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="https://t.co/6wAT7tnkwh">pic.twitter.com/6wAT7tnkwh</a></p>&mdash; Tripping Rover (@tripping_rover) <a href="https://twitter.com/tripping_rover/status/664082624672043009">November 10, 2015</a></blockquote>
+<blockquote class="twitter-tweet" lang="en">
+<p lang="und" dir="ltr"><a href="https://t.co/6wAT7tnkwh">pic.twitter.com/6wAT7tnkwh</a></p>— Tripping Rover (@tripping_rover) <a href="https://twitter.com/tripping_rover/status/664082624672043009">November 10, 2015</a>
+</blockquote>
 
 <p>You can check the full profile for the <a href="https://twitter.com/tripping_rover">Tripping_Rover on Twitter</a>.</p>
 
@@ -241,7 +252,7 @@
 <p>P.S. During the writing of this post, I saw a couple of tweets with interesting material related to Mars, one fiction, one reality:</p>
 
 <ul>
-  <li>A <a href="https://twitter.com/saleiva/status/666626259762479104">tweet</a> from <a href="https://twitter.com/saleiva">@saleiva</a> linking a <a href="https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map">cool map</a> of <a href="http://www.imdb.com/character/ch0484069/?ref_=tt_cl_t1">Mark Watney</a> adventures on Mars, based on <a rel="nofollow" href="http://www.amazon.com/gp/product/0553418025/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0553418025&amp;linkCode=as2&amp;tag=sonsonacat-20&amp;linkId=7ZXXETORW5HBCVS7">The Martian</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&amp;l=as2&amp;o=1&amp;a=0553418025" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, the book from Andy Weir. Enjoy it!</li>
+  <li>A <a href="https://twitter.com/saleiva/status/666626259762479104">tweet</a> from <a href="https://twitter.com/saleiva">@saleiva</a> linking a <a href="https://whereonmars.cartodb.com/viz/cd68c630-8be7-11e5-81ea-0ecfd53eb7d3/public_map">cool map</a> of <a href="http://www.imdb.com/character/ch0484069/?ref_=tt_cl_t1">Mark Watney</a> adventures on Mars, based on <a rel="nofollow" href="http://www.amazon.com/gp/product/0553418025/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0553418025&amp;linkCode=as2&amp;tag=sonsonacat-20&amp;linkId=7ZXXETORW5HBCVS7">The Martian</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=sonsonacat-20&amp;l=as2&amp;o=1&amp;a=0553418025" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">, the book from Andy Weir. Enjoy it!</li>
   <li>A <a href="https://twitter.com/arnicas/status/667083032533336065">tweet</a> from <a href="https://twitter.com/arnicas">@arnicas</a> linking an <a href="http://www.nytimes.com/interactive/science/space/mars-curiosity-rover-tracker.html">interactive map</a> by the New York Times Graphics Team depicting the path of the Curiosity rover on Mars.</li>
 </ul>
 
@@ -251,12 +262,12 @@
     <h3>Share this post</h3>
     <div class="post-share">
   <div class="share-wrapper">
-      <a class="share-button twitter" href="https://twitter.com/intent/tweet?url=http://sonsona.cat/martian-rovers/&text=Martian%20rovers%20by%20@msonsona" title="Share on Twitter" target="_blank"><span class="share-icon"></span><span class="share-title">Twitter</span></a>
-      <a class="share-button facebook" href="https://www.facebook.com/dialog/share?app_id=575249442622139&display=popup&href=http://sonsona.cat/martian-rovers/&redirect_uri=http://sonsona.cat/martian-rovers/" title="Share on Facebook" target="_blank"><span class="share-icon"></span><span class="share-title">Facebook</span></a>
-      <a class="share-button gplus" href="https://plus.google.com/share?url=http://sonsona.cat/martian-rovers/" onclick="javascript:window.open(this.href,
+      <a class="share-button twitter" href="https://twitter.com/intent/tweet?url=http://localhost:4000/martian-rovers/&amp;text=Martian%20rovers%20by%20@msonsona" title="Share on Twitter" target="_blank"><span class="share-icon"></span><span class="share-title">Twitter</span></a>
+      <a class="share-button facebook" href="https://www.facebook.com/dialog/share?app_id=575249442622139&amp;display=popup&amp;href=http://localhost:4000/martian-rovers/&amp;redirect_uri=http://localhost:4000/martian-rovers/" title="Share on Facebook" target="_blank"><span class="share-icon"></span><span class="share-title">Facebook</span></a>
+      <a class="share-button gplus" href="https://plus.google.com/share?url=http://localhost:4000/martian-rovers/" onclick="javascript:window.open(this.href,
 '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google+"><span class="share-icon"></span><span class="share-title">Google+</span></a>
-      <a class="share-button whatsapp" href="whatsapp://send?text=http://sonsona.cat/martian-rovers/" title="Share on Whatsapp"><span class="share-icon"></span><span class="share-title">Whatsapp</span></a>
-      <a class="share-button email" href="mailto:?subject=Martian%20rovers%20by%20Miquel%20Sonsona&amp;body=http://sonsona.cat/martian-rovers/" title="Share via email" target="_blank"><span class="share-icon"></span><span class="share-title">Email</span></a>
+      <a class="share-button whatsapp" href="whatsapp://send?text=http://localhost:4000/martian-rovers/" title="Share on Whatsapp"><span class="share-icon"></span><span class="share-title">Whatsapp</span></a>
+      <a class="share-button email" href="mailto:?subject=Martian%20rovers%20by%20Miquel%20Sonsona&amp;body=http://localhost:4000/martian-rovers/" title="Share via email" target="_blank"><span class="share-icon"></span><span class="share-title">Email</span></a>
   </div>
 </div>
   </aside>
@@ -281,7 +292,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>2015 - 2016 • sonsona.cat</li>
+          <li>2015 - 2020 • sonsona.cat</li>
           <li><a href="mailto:miquel@sonsona.cat">miquel@sonsona.cat</a></li>
         </ul>
       </div>
@@ -290,7 +301,7 @@
         <ul class="social-media-list">
           
           <li>
-            <a href="https://github.com/msonsona"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+            <a href="https://github.com/msonsona"><span class="icon icon--github"><svg viewbox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"></path></svg>
 </span><span class="username">msonsona</span></a>
 
           </li>
@@ -298,7 +309,7 @@
 
           
           <li>
-            <a href="https://twitter.com/msonsona"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+            <a href="https://twitter.com/msonsona"><span class="icon icon--twitter"><svg viewbox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"></path></svg>
 </span><span class="username">msonsona</span></a>
 
           </li>
@@ -308,7 +319,7 @@
 
       <div class="footer-col footer-col-3">
         <p>Along a path of learning and discovery
-<br/><a href="/feed.xml">Subscribe</a></p>
+<br><a href="/feed.xml">Subscribe</a></p>
       </div>
     </div>
 

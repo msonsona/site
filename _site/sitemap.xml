@@ -1,85 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://sonsona.cat/growth-hacking-for-twitterbots/</loc>
-    <lastmod>2016-01-27T00:00:00+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/a-better-candidate/</loc>
-    <lastmod>2016-01-19T00:00:00+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/martian-rovers/</loc>
-    <lastmod>2015-11-20T00:00:00+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/playing-in-your-browser/</loc>
-    <lastmod>2015-10-28T00:00:00+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/a-bot-for-the-elections/</loc>
-    <lastmod>2015-10-14T00:00:00+02:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/my-first-twitterbot/</loc>
-    <lastmod>2015-10-09T00:00:00+02:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/hello-world/</loc>
-    <lastmod>2015-10-07T00:00:00+02:00</lastmod>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/404/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/about/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/blog/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/contact/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/itaca/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/projects/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/category/meta/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/category/twitterbots/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/category/gamedev/</loc>
-  </url>
-  <url>
-    <loc>http://sonsona.cat/projects/itaca/</loc>
-  </url>
-    <url>
-      <loc>http://sonsona.cat/hello-world/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/my-first-twitterbot/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/a-bot-for-the-elections/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/playing-in-your-browser/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/martian-rovers/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/a-better-candidate/</loc>
-    </url>
-    <url>
-      <loc>http://sonsona.cat/growth-hacking-for-twitterbots/</loc>
-    </url>
+<url>
+<loc>http://localhost:4000/hello-world/</loc>
+<lastmod>2015-10-07T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/my-first-twitterbot/</loc>
+<lastmod>2015-10-09T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/a-bot-for-the-elections/</loc>
+<lastmod>2015-10-14T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/playing-in-your-browser/</loc>
+<lastmod>2015-10-28T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/martian-rovers/</loc>
+<lastmod>2015-11-20T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/a-better-candidate/</loc>
+<lastmod>2016-01-19T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/growth-hacking-for-twitterbots/</loc>
+<lastmod>2016-01-27T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/projects/itaca/</loc>
+<lastmod>2016-03-09T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/404/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/itaca/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/projects/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/meta/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/twitterbots/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/gamedev/</loc>
+</url>
 </urlset>

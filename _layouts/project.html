@@ -1,12 +1,41 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<h3>{{ page.date }} - {{ page.category }}</h3>
-<p>{{ page.description }}</p>
 
-<ul>
-    {% for technology in page.technologies %}
-    <li>{{ technology }}</li>
-    {% endfor %}
-</ul>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+      <p class="post-meta">on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_string: "ordinal", "US" }}</time>
+      {% if page.categories %} • in
+      {% for category in page.categories %} <a href="/category/{{ category | slugify }}/">{{ category }}</a>{% endfor %}
+      {% endif %}
+       • by <span itemprop="author">Miquel Sonsona</span>
+      </p>
+    </header>
+  
+    <div class="post-content" itemprop="articleBody">
+        <p>{{ page.short_description }}</p>
+        <h3>Technologies used:</h3>
+        <ul>
+            {% for technology in page.technologies %}
+            <li>{{ technology }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h3>Links of interest:</h3>
+        <p><a href="{{ page.source_url }}">Project source</a> - <a href="{{ page.project_url }}">Project site</a></p>
+        
+        {{ content }}
+    </div>
+    
+    <aside>
+      <h3>Share this project</h3>
+      {% include share.html %}
+    </aside>
+  
+    <nav>
+      <h3>Or go back to <a href="{% link projects.html %}">Projects</a></h3>
+    </nav>
+      
+  </article>
