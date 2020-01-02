@@ -40,7 +40,7 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-archives
-  - jemoji
+  - jekyll-openmoji
   - jekyll-sitemap
 
 # Files

@@ -108,7 +108,7 @@ One of the most convenient things Tweepy provides is the authorization managemen
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">tweet</span> <span class="o">=</span> <span class="s">"This is my first tweet! Bip! Bip!"</span>
 <span class="n">api</span><span class="o">.</span><span class="n">update_status</span><span class="p">(</span><span class="n">status</span><span class="o">=</span><span class="n">tweet</span><span class="p">)</span></code></pre></figure>
 
-<p>Having the foundation working, what’s left is to decide on what the twitterbot will tweet. I wanted to make the twitterbot tweet regularly, so I though on something suitable to tweet each hour, for example. The most direct thing was to build a clock bot. To spice things a little bit, and given that one of my planned twitterbots involves using emoji, I though to make a cuckoo clock with some little graphics topping <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">. One of the things I discovered is that one can directly embed emoji symbols within the code:</p>
+<p>Having the foundation working, what’s left is to decide on what the twitterbot will tweet. I wanted to make the twitterbot tweet regularly, so I though on something suitable to tweet each hour, for example. The most direct thing was to build a clock bot. To spice things a little bit, and given that one of my planned twitterbots involves using emoji, I though to make a cuckoo clock with some little graphics topping <img class="emoji" title="smile" alt="😄" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604.svg" height="20" width="20">. One of the things I discovered is that one can directly embed emoji symbols within the code:</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 
@@ -147,7 +147,7 @@ One of the most convenient things Tweepy provides is the authorization managemen
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">hour</span><span class="p">):</span>
     <span class="n">tweet</span> <span class="o">+=</span> <span class="s">"🐤cuckoo "</span></code></pre></figure>
 
-<p>So this code will compose a tweet showing an emoji clock face depending on the current hour, and then append as many “cuckoos” as needed. Simple, but enough to start <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">.</p>
+<p>So this code will compose a tweet showing an emoji clock face depending on the current hour, and then append as many “cuckoos” as needed. Simple, but enough to start <img class="emoji" title="smile" alt="😄" src="https://cdn.jsdelivr.net/gh/azadeh-afzar/OpenMoji-Jekyll-Plugin@latest/images/color/svg/1f604.svg" height="20" width="20">.</p>
 
 <p>In order to obtain the clock behavior, I just added a new entry to <code class="language-plaintext highlighter-rouge">crontab</code> to run this script hourly at each o’clock.</p>
 

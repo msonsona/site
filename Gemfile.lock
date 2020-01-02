@@ -83,6 +83,9 @@ GEM
     html-pipeline (2.12.3)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    html-pipeline-negarmoji (0.1.2)
+      html-pipeline (~> 2.12)
+      negarmoji (~> 0.1.5)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -125,6 +128,11 @@ GEM
     jekyll-mentions (1.5.1)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
+    jekyll-openmoji (0.1.2)
+      html-pipeline (~> 2.12)
+      html-pipeline-negarmoji (~> 0.1.2)
+      jekyll (>= 3.0, < 5.0)
+      negarmoji (~> 0.1.5)
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
@@ -206,6 +214,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.13.0)
     multipart-post (2.1.1)
+    negarmoji (0.1.5)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
@@ -249,6 +258,7 @@ DEPENDENCIES
   github-pages
   jekyll-archives
   jekyll-feed (~> 0.12)
+  jekyll-openmoji
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
